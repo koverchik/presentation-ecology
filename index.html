@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+
+
+		<link rel="stylesheet" href="dist/theme/sky.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img src="image-presentation/logo.png" />
+					<div class="link-developers">
+						<div>
+							<a href="https://github.com/GrafDrakula-BlaBlaBla">Bogdan Levchenko</a>
+						</div>
+						<div>
+							<a href="https://github.com/koverchik">Olga Koverchik</a>
+						</div>
+						<div>
+							<a href="https://github.com/AlexLevw">Aliaksandr Levanenia</a>
+						</div>
+					</div>
+					</section>
+				<section>
+					<section>
+						<h4>Оформление и структура приложения</h4>
+						<div>
+							При загрузке приложения вы попадаете на главную страницу. Визуально экран приложения разделен на 2-е половины.
+							В левой части экрана расположена интерактивная навигационная карта, справа информационный блок с интерактивными элементами.
+						</div>
+					</section>
+					<section>
+						<div>
+							В верхнем левом углу находится кнопка главного меню.
+							В правом углу кнопка входа.
+						</div>
+						<img src="image-presentation/main-page-enter.png" />
+					</section>
+					<section>
+						<h4>Функционал</h4>
+						<div>
+							Меню станет доступно после нажатия кнопки главного меню.
+						</div>
+						<img src="image-presentation/main-page-with-menu.png" />
+					</section>
+					<section>
+						<div>
+							По кнопке присоединиться пользователь попадет на страницу «Карта мероприятий»
+						</div>
+						<img src="image-presentation/calendar-all.png" />
+					</section>
+					<section>
+						<div>
+							По кнопке «Вход» пользователя отправит на страницу регистрации, если пользователь уже вошел или зарегистрировался, кнопка входа будет заменена на кнопку профиля и при клике будет направлен на страницу профиля.
+						</div>
+						<div style="display:flex">
+							<img height="350px"src="image-presentation/registration.png" />
+							<img height="350px"src="image-presentation/history.png" />
+						</div>
+					</section>
+					<section>
+						<h4>Главное меню</h4>
+						<div style="display:flex; justify-content: space-between;">
+							<ul>
+								<p>
+									Меню состоит из:
+								</p>
+								<li>
+									Главная
+								</li>
+								<li>
+									Карта мероприятий
+								</li>
+								<li>
+									Создать мероприятие
+								</li>
+								<li>
+									Игра
+								</li>
+							</ul>
+							<img height="350px"src="image-presentation/menu.png" />
+						</div>
+					</section>
+					<section>
+						<div>
+								Главная страница представлена интерактивной навигационной картой и информационным блок с интерактивными элементами.
+						</div>
+						<div>
+							<img height="350px"src="image-presentation/main-page-enter.png" />
+						</div>
+					</section>
+					<section>
+						<h4>Страница карты мероприятий</h4>
+						<div style="">
+							<ul >
+								<li>
+									карту мероприятий
+								</li>
+								<li>
+									календарь мероприятий
+								</li>
+								<li>
+									cписок мероприятий на выбранную в календаре дату
+								</li>
+							</ul>
+							<img width="60%" src="image-presentation/calendar-all.png" />
+						</div>
+					</section>
+					<section>
+						<h4>Страница карты мероприятий</h4>
+						<div >
+							<p>
+								Карта мероприятий показывает место в котором проведения мероприятий,
+								которые визуально группируются на прошедшие, текущие и запланированные.
+							</p>
+							<p>
+								Легенда карты - описание цветового соответствия находится в левом верхнем углу карты.
+							</p>
+						</div>
+						<img src="image-presentation/legend.png" />
+					</section>
+					<section>
+						<h4>Функционал карты мероприятий</h4>
+						<div>
+							<p>
+								Карта отображает мероприятия за все время. При клике по мероприятию появится подсказка с информацией о мероприятии.
+							</p>
+						</div>
+					</section>
+					<section>
+						<h4>Функционал карты мероприятий</h4>
+						<div>
+							<img height="500px"src="image-presentation/map-with-marker.png" />
+						</div>
+					</section>
+					<section>
+						<h4>Календарь мероприятий</h4>
+						<div>
+							<p>
+								Календарь мероприятий содержит название мероприятий на определенную дату.
+							</p>
+							<p>
+								Календарь отображает мероприятия за месяц, при клике по названию мероприятия можно посмотреть информацию о данном мероприятии.
+							</p>
+							<img height="250px"src="image-presentation/calendar-one-mounth.png" />
+						</div>
+					</section>
+					<section>
+						<h4>Список мероприятий</h4>
+						<div>
+							<p>
+								Список мероприятий на выбранную дату отображается под Календарем мероприятий.
+							</p>
+							<p>
+								В данном блоке отображается список мероприятий на выбранную дату в календаре.
+							</p>
+							<img height="250px"src="image-presentation/calendar-one-day.png" />
+						</div>
+					</section>
+					<section>
+						<h4>Страница мероприятия</h4>
+						<div>
+							<p>
+								При клике на ссылку «Посмотреть» открывается страница с описанием мероприятия с возможностью присоединиться к данному мероприятию нажав кнопку «Присоединиться».
+							</p>
+							<p>
+								 Если мероприятие было создано самим пользователем, то он будет направлен на страницу «Создания нового мероприятия».
+							</p>
+						</div>
+					</section>
+					<section>
+						<h4>Страница мероприятия</h4>
+						<div>
+							<img height="500px"src="image-presentation/event-add.png" />
+							<img height="500px"src="image-presentation/event-create-new.png" />
+						</div>
+					</section>
+					<section>
+						<h4>Страница создания мероприятия</h4>
+						<div>
+							<p>
+								Отображает карту мероприятий и блок для создания нового мероприятия пользователем.
+							</p>
+							<p>
+								В данном блоке пользователь заполняет информацию о новом мероприятии.
+								После нажатия по кнопке создать мероприятие появится на карте и в календаре.
+								Поля страницы имеют валидацию для обеспечения корректности введенных данных.
+							</p>
+							<p>
+								Если пользователь не был зарегистрирован, при нажатии на данный пункт меню он будет перенаправлен на страницу регистрации.
+							</p>
+						</div>
+					</section>
+					<section>
+						<h4>Страница создания мероприятия</h4>
+						<div>
+							<img height="500px"src="image-presentation/event-event.png" />
+							<img height="500px"src="image-presentation/validation.png" />
+						</div>
+					</section>
+					<section>
+						<h4>Игра</h4>
+						<div>
+							<p>
+								Страница с игрой просит нажать кнопку Play, после чего отобразится приветственный экран.
+								Далее следует страница со списком доступных уровней. После выбора уровня начинается игра.</p>
+							<h4>
+						</div>
+					</section>
+					<section>
+						<h4>
+							Процесс игры (функционал)
+						</h4>
+						<div>
+							<p>
+								Суть игры заключается в распределении мусора по соответствующим контейнерам путем перетаскивания при удержании кнопки мыши,
+								 если предмет не соответствует контейнеру предмет не будет помещен в контейнер.
+							</p>
+							<p>При успешном окончании игры  появится поздравительное сообщение, есть возможность выйти из игры не закончив уровень.
+							</p>
+							<p>
+								В игровом меню доступна кнопка отображающая правила игры.
+							</p>
+						</div>
+					</section>
+					<section>
+						<h4>
+							Меню игры
+						</h4>
+						<div>
+								<img height="500px"src="image-presentation/game.png" />
+							</div>
+					</section>
+					<section>
+						<h4>
+							Игра
+						</h4>
+						<div>
+							<img height="500px"src="image-presentation/game-play.png" />
+						</div>
+					</section>
+					<section>
+						<h4>
+							Страница профиля пользователя
+						</h4>
+						<div>
+							<p>
+								На странице доступна информация о пользователе, его достижения в виде единиц кислорода,
+								истории событий которая отображает действия пользователя.</p>
+						 <p>
+							  Справа находится фильтр мероприятий.
+						 </p>
+							<p>
+								На странице пользователя есть возможность просматривать личную историю событий.
+								При нажатии по кнопке настройки пользователь может редактировать личную информацию.
+							</p>
+						</div>
+					</section>
+					<section>
+						<h4>
+							Страница профиля пользователя
+						</h4>
+						<div>
+								<img height="500px"src="image-presentation/history.png" />
+						</div>
+					</section>
+					<section>
+						<h4>
+							Страница профиля пользователя
+						</h4>
+						<div>
+								<img height="500px"src="image-presentation/profile-edit.png" />
+						</div>
+					</section>
+					<section>
+						<h4>
+							Страница профиля пользователя
+						</h4>
+						<div>
+							<p>
+								В окне мероприятий осуществлена  фильтрация мероприятий относительно текущей (системной) даты путем переключения кнопок:
+								«Прошедшие», «Cегодня», «Предстоящие».
+								</p>
+								<p>
+									При клике по кнопке  «Мои» буду показаны мероприятия созданные пользователем и те в которых он является участником.
+								</p>
+								</div>
+					</section>
+					<section>
+						<h4>
+							Страница профиля пользователя
+						</h4>
+						<div>
+								<p>
+									При нажатии Подробнее пользователь будет направлен на страницу с информацией о мероприятии.
+								</p>
+								<img height="400px"src="image-presentation/event-add.png" />
+						</div>
+					</section>
+					<section>
+						<h4>
+							Особенности и возможности
+						</h4>
+						<div>
+								<p>
+									Возможность добавления календаря мероприятий в качестве дополнительного.
+								</p>
+								<p>
+									Найти и подписаться на календарь можно по адресу электронной почты владельца календаря.
+								</p>
+							</div>
+					</section>
+					<section>
+						<h4>
+							Google Calendar
+						</h4>
+						<div>
+								<img src="image-presentation/calendar-google.png" />
+						</div>
+					</section>
+					<section>
+						<h4>
+							Кислород
+						</h4>
+						<div>
+							<p>
+								При участии в экодвижени пользователь будет получать единицы кислорода за создание мероприятий и участие в других.
+							</p>
+								<img src="image-presentation/range.png" />
+						</div>
+					</section>
+				</section>
+			<section>
+				<section>
+					<h4>
+						Организация командной работы
+					</h4>
+					<div>
+						<p>
+							При разработке приложения  RACI матрица не использовалась, так как в разработке проекта участвовало 3-и человека и данный инструментарий был избыточным.
+						</p>
+					</div>
+				</section>
+				<section>
+					<h4>
+						Инструменты для организации совместной работы
+					</h4>
+					<div>
+						<ul>
+							<li>
+								Trello для распределения задач
+							</li>
+							<li>
+								Discord для ведения совместных встреч
+							</li>
+							<li>
+								Telegram для информирования и прояснения вопросов возникших в ходе работы
+							</li>
+							<li>
+								Github для совместной разработки
+							</li>
+							<li>
+								Figma для создания макета приложения
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<div>
+						При возникновении сложностей у одного из участников команды, организовывался внеплановый митинг, на котором методом мозгового штурма предлагались возможности решения проблемы.
+					</div>
+				</section>
+				<section>
+					<h4>Особенности технической реализации проекта</h4>
+					<p>
+						Использованы JavaScript-библиотеки
+					</p>
+					<ul>
+						<li>
+							React
+						</li>
+						<li>
+							MobX
+						</li>
+						<li>
+							Pixi js
+						</li>
+						<li>
+							Express
+						</li>
+						<li>
+							Axios
+						</li>
+						<li>
+							Google APIs
+						</li>
+						<li>
+							jsonwebtoken
+						</li>
+						<li>
+							validatorjs
+						</li>
+						<li>
+							Leaflet
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h4>
+					Технические сложности и проблемы с которым столкнулись в процессе создания приложения
+					</h4>
+					<div>
+						<p>
+							Из за нехватки опыта возникла сложность при переносе проекта из локальной тестовой среды в подакшен.
+						</p>
+						<p>
+							В связи с отсутствием ментора, код-ревью  не производилось, вся ответственность за качество кода ложилась на плечи разработчика.
+						</p>
+					</div>
+					<div>
+						<a href="https://github.com/GrafDrakula-BlaBlaBla/rsclone/tree/develop">История commit</a>
+					</div>
+					<div>
+						<a href="https://rsclone-ecology.herokuapp.com/">Приложение</a>
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
